@@ -1,0 +1,304 @@
+.TH "Module.h" 3 "2017年 五月 18日 星期四" "Version 0.1.0" "SmartPhylab" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Module.h
+.SH SYNOPSIS
+.br
+.PP
+.SS "函数"
+
+.in +1c
+.ti -1c
+.RI "int \fBU0_DataReady\fP ()"
+.br
+.ti -1c
+.RI "long \fBU0_Read\fP ()"
+.br
+.ti -1c
+.RI "void \fBU0_SendInt\fP (int c)"
+.br
+.ti -1c
+.RI "void \fBU0_SendChar\fP (char c)"
+.br
+.ti -1c
+.RI "void \fBU0_SendString\fP (char *c)"
+.br
+.ti -1c
+.RI "void \fBU0_LinMaster\fP (int brklength)"
+.br
+.ti -1c
+.RI "void \fBU0_LinSlave\fP ()"
+.br
+.ti -1c
+.RI "int \fBU1_DataReady\fP ()"
+.br
+.ti -1c
+.RI "long \fBU1_Read\fP ()"
+.br
+.ti -1c
+.RI "void \fBU1_SendInt\fP (int c)"
+.br
+.ti -1c
+.RI "void \fBU1_SendChar\fP (char c)"
+.br
+.ti -1c
+.RI "void \fBU1_SendString\fP (char *c)"
+.br
+.ti -1c
+.RI "void \fBU1_LinMaster\fP (int brklength)"
+.br
+.ti -1c
+.RI "void \fBU1_LinSlave\fP ()"
+.br
+.ti -1c
+.RI "void \fBSys_Irq\fP (int enable)"
+.br
+.ti -1c
+.RI "void \fBU0_DataIrq\fP (int enable)"
+.br
+.ti -1c
+.RI "void \fBU0_IrqClr\fP ()"
+.br
+.ti -1c
+.RI "void \fBU1_DataIrq\fP (int enable)"
+.br
+.ti -1c
+.RI "void \fBU1_IrqClr\fP ()"
+.br
+.ti -1c
+.RI "int \fBpower\fP (int a, int b)"
+.br
+.ti -1c
+.RI "void \fBhexToDec\fP (int hex, char *dec)"
+.br
+.ti -1c
+.RI "void \fBDHT11\fP (int *result)"
+.br
+.ti -1c
+.RI "void \fBgetRespond\fP (char *respond)"
+.br
+.ti -1c
+.RI "short \fBenterComm\fP ()"
+.br
+.ti -1c
+.RI "void \fBexitComm\fP ()"
+.br
+.ti -1c
+.RI "void \fBgetUartF\fP (char *UartF)"
+.br
+.ti -1c
+.RI "short \fBsetUartF\fP (char *UartF)"
+.br
+.ti -1c
+.RI "void \fBgetUartFT\fP (char *UartFT)"
+.br
+.ti -1c
+.RI "short \fBsetUartFT\fP (char *UartFT)"
+.br
+.ti -1c
+.RI "void \fBgetUartFL\fP (char *UartFL)"
+.br
+.ti -1c
+.RI "short \fBsetUartFL\fP (char *UartFL)"
+.br
+.ti -1c
+.RI "void \fBgetUartTE\fP (char *UartTE)"
+.br
+.ti -1c
+.RI "short \fBsetUartTE\fP (char *UartTE)"
+.br
+.ti -1c
+.RI "void \fBgetSSID\fP (char *SSID)"
+.br
+.ti -1c
+.RI "short \fBsetSSID\fP (char *SSID)"
+.br
+.ti -1c
+.RI "void \fBgetWSKEY\fP (char *WSKEY)"
+.br
+.ti -1c
+.RI "short \fBsetWSKEY\fP (char *auth, char *encry, char *passwd)"
+.br
+.ti -1c
+.RI "void \fBgetLinkState\fP (char *state)"
+.br
+.ti -1c
+.RI "void \fBgetSockANETP\fP (char *NETP)"
+.br
+.ti -1c
+.RI "short \fBsetSockANETP\fP (char *protocol, char *CS, char *port, char *ip)"
+.br
+.ti -1c
+.RI "void \fBgetSockATCPLK\fP (char *TCPLK)"
+.br
+.in -1c
+.SH "函数说明"
+.PP 
+.SS "void DHT11 (int * result)"
+
+.PP
+在文件 Module\&.c 第 294 行定义\&.
+.SS "short enterComm ()"
+
+.PP
+在文件 Module\&.c 第 353 行定义\&.
+.SS "void exitComm ()"
+
+.PP
+在文件 Module\&.c 第 371 行定义\&.
+.SS "void getLinkState (char * state)"
+
+.PP
+在文件 Module\&.c 第 641 行定义\&.
+.SS "void getRespond (char * respond)"
+
+.PP
+在文件 Module\&.c 第 343 行定义\&.
+.SS "void getSockANETP (char * NETP)"
+
+.PP
+在文件 Module\&.c 第 661 行定义\&.
+.SS "void getSockATCPLK (char * TCPLK)"
+
+.PP
+在文件 Module\&.c 第 711 行定义\&.
+.SS "void getSSID (char * SSID)"
+
+.PP
+在文件 Module\&.c 第 550 行定义\&.
+.SS "void getUartF (char * UartF)"
+
+.PP
+在文件 Module\&.c 第 382 行定义\&.
+.SS "void getUartFL (char * UartFL)"
+
+.PP
+在文件 Module\&.c 第 466 行定义\&.
+.SS "void getUartFT (char * UartFT)"
+
+.PP
+在文件 Module\&.c 第 424 行定义\&.
+.SS "void getUartTE (char * UartTE)"
+
+.PP
+在文件 Module\&.c 第 508 行定义\&.
+.SS "void getWSKEY (char * WSKEY)"
+
+.PP
+在文件 Module\&.c 第 593 行定义\&.
+.SS "void hexToDec (int hex, char * dec)"
+
+.PP
+在文件 Module\&.c 第 262 行定义\&.
+.SS "int power (int a, int b)"
+
+.PP
+在文件 Module\&.c 第 247 行定义\&.
+.SS "short setSockANETP (char * protocol, char * CS, char * port, char * ip)"
+
+.PP
+在文件 Module\&.c 第 684 行定义\&.
+.SS "short setSSID (char * SSID)"
+
+.PP
+在文件 Module\&.c 第 570 行定义\&.
+.SS "short setUartF (char * UartF)"
+
+.PP
+在文件 Module\&.c 第 402 行定义\&.
+.SS "short setUartFL (char * UartFL)"
+
+.PP
+在文件 Module\&.c 第 486 行定义\&.
+.SS "short setUartFT (char * UartFT)"
+
+.PP
+在文件 Module\&.c 第 444 行定义\&.
+.SS "short setUartTE (char * UartTE)"
+
+.PP
+在文件 Module\&.c 第 528 行定义\&.
+.SS "short setWSKEY (char * auth, char * encry, char * passwd)"
+
+.PP
+在文件 Module\&.c 第 615 行定义\&.
+.SS "void Sys_Irq (int enable)"
+
+.PP
+在文件 Module\&.c 第 194 行定义\&.
+.SS "void U0_DataIrq (int enable)"
+
+.PP
+在文件 Module\&.c 第 204 行定义\&.
+.SS "int U0_DataReady ()"
+
+.PP
+在文件 Module\&.c 第 46 行定义\&.
+.SS "void U0_IrqClr ()"
+
+.PP
+在文件 Module\&.c 第 214 行定义\&.
+.SS "void U0_LinMaster (int brklength)"
+
+.PP
+在文件 Module\&.c 第 98 行定义\&.
+.SS "void U0_LinSlave ()"
+
+.PP
+在文件 Module\&.c 第 108 行定义\&.
+.SS "long U0_Read ()"
+
+.PP
+在文件 Module\&.c 第 55 行定义\&.
+.SS "void U0_SendChar (char c)"
+
+.PP
+在文件 Module\&.c 第 75 行定义\&.
+.SS "void U0_SendInt (int c)"
+
+.PP
+在文件 Module\&.c 第 65 行定义\&.
+.SS "void U0_SendString (char * c)"
+
+.PP
+在文件 Module\&.c 第 85 行定义\&.
+.SS "void U1_DataIrq (int enable)"
+
+.PP
+在文件 Module\&.c 第 223 行定义\&.
+.SS "int U1_DataReady ()"
+
+.PP
+在文件 Module\&.c 第 120 行定义\&.
+.SS "void U1_IrqClr ()"
+
+.PP
+在文件 Module\&.c 第 233 行定义\&.
+.SS "void U1_LinMaster (int brklength)"
+
+.PP
+在文件 Module\&.c 第 172 行定义\&.
+.SS "void U1_LinSlave ()"
+
+.PP
+在文件 Module\&.c 第 182 行定义\&.
+.SS "long U1_Read ()"
+
+.PP
+在文件 Module\&.c 第 129 行定义\&.
+.SS "void U1_SendChar (char c)"
+
+.PP
+在文件 Module\&.c 第 149 行定义\&.
+.SS "void U1_SendInt (int c)"
+
+.PP
+在文件 Module\&.c 第 139 行定义\&.
+.SS "void U1_SendString (char * c)"
+
+.PP
+在文件 Module\&.c 第 159 行定义\&.
+.SH "作者"
+.PP 
+由 Doyxgen 通过分析 SmartPhylab 的 源代码自动生成\&.

@@ -1,0 +1,1337 @@
+.TH "Module.c" 3 "2017年 五月 18日 星期四" "Version 0.1.0" "SmartPhylab" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Module.c \- Functions for modules  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'mcu\&.h'\fP
+.br
+
+.SS "宏定义"
+
+.PP
+.RI "\fBAddress Definition\fP"
+.br
+
+.in +1c
+.in +1c
+.ti -1c
+.RI "#define \fBU0_READ_REG\fP   0x1f800000"
+.br
+.ti -1c
+.RI "#define \fBU0_BUSY_REG\fP   0x1f800001"
+.br
+.ti -1c
+.RI "#define \fBU0_WRITE_REG\fP   0x1f800002"
+.br
+.ti -1c
+.RI "#define \fBU0_CLRIRQ_REG\fP   0x1f800003"
+.br
+.ti -1c
+.RI "#define \fBU0_CTL0_REG\fP   0x1f800004"
+.br
+.ti -1c
+.RI "#define \fBU0_DATA_RDY_REG\fP   0x1f800005"
+.br
+.ti -1c
+.RI "#define \fBU0_LINBRK_REG\fP   0x1f800006"
+.br
+.ti -1c
+.RI "#define \fBU0_BRP_REG\fP   0x1f800007"
+.br
+.ti -1c
+.RI "#define \fBU1_READ_REG\fP   0x1f800800"
+.br
+.ti -1c
+.RI "#define \fBU1_BUSY_REG\fP   0x1f800801"
+.br
+.ti -1c
+.RI "#define \fBU1_WRITE_REG\fP   0x1f800802"
+.br
+.ti -1c
+.RI "#define \fBU1_CLRIRQ_REG\fP   0x1f800803"
+.br
+.ti -1c
+.RI "#define \fBU1_CTL0_REG\fP   0x1f800804"
+.br
+.ti -1c
+.RI "#define \fBU1_DATA_RDY_REG\fP   0x1f800805"
+.br
+.ti -1c
+.RI "#define \fBU1_LINBRK_REG\fP   0x1f800806"
+.br
+.ti -1c
+.RI "#define \fBU1_BRP_REG\fP   0x1f800807"
+.br
+.ti -1c
+.RI "#define \fBSYS_IOCTL_REG\fP   0x1f800704"
+.br
+.ti -1c
+.RI "#define \fBSYS_GPIO0_REG\fP   0x1f800705"
+.br
+.ti -1c
+.RI "#define \fBSYS_GPIO1_REG\fP   0x1f800706"
+.br
+.ti -1c
+.RI "#define \fBSYS_IRQ_REG\fP   0x1f800707"
+.br
+.in -1c
+.in -1c
+.SS "函数"
+
+.PP
+.RI "\fBU0_DataReady\fP"
+.br
+This function returns the state of Rx of Uart0
+.PP
+\fB参数:\fP
+.RS 4
+\fIstate\fP of Rx of Uart0 
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+0=not ready,1=ready 
+.RE
+.PP
+
+.PP
+.in +1c
+.in +1c
+.ti -1c
+.RI "int \fBU0_DataReady\fP ()"
+.br
+.in -1c
+.in -1c
+.PP
+.RI "\fBU0_Read\fP"
+.br
+This function returns the data received via Uart0
+.PP
+\fB参数:\fP
+.RS 4
+\fIdata\fP from Uart0 
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+data from Uart0 
+.RE
+.PP
+
+.PP
+.in +1c
+.in +1c
+.ti -1c
+.RI "long \fBU0_Read\fP ()"
+.br
+.in -1c
+.in -1c
+.PP
+.RI "\fBU0_SendInt\fP"
+.br
+This function is used to send out int data
+.PP
+\fB参数:\fP
+.RS 4
+\fIc\fP int data to send out 
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+void 
+.RE
+.PP
+
+.PP
+.in +1c
+.in +1c
+.ti -1c
+.RI "void \fBU0_SendInt\fP (int c)"
+.br
+.in -1c
+.in -1c
+.PP
+.RI "\fBU0_SendChar\fP"
+.br
+This function is used to send out char data
+.PP
+\fB参数:\fP
+.RS 4
+\fIc\fP char data to send out 
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+void 
+.RE
+.PP
+
+.PP
+.in +1c
+.in +1c
+.ti -1c
+.RI "void \fBU0_SendChar\fP (char c)"
+.br
+.in -1c
+.in -1c
+.PP
+.RI "\fBU0_SendString\fP"
+.br
+This function is used to send out a string
+.PP
+\fB参数:\fP
+.RS 4
+\fIc\fP a pointer points to the string 
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+void 
+.RE
+.PP
+
+.PP
+.in +1c
+.in +1c
+.ti -1c
+.RI "void \fBU0_SendString\fP (char *c)"
+.br
+.in -1c
+.in -1c
+.PP
+.RI "\fBU0_LinMaster\fP"
+.br
+This function is for setting M2 Lin working in master mode
+.PP
+\fB参数:\fP
+.RS 4
+\fIbrklength\fP the length of the break signal,0=normal length,1=extreme length 
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+void 
+.RE
+.PP
+
+.PP
+.in +1c
+.in +1c
+.ti -1c
+.RI "void \fBU0_LinMaster\fP (int brklength)"
+.br
+.in -1c
+.in -1c
+.PP
+.RI "\fBU0_LinSlave\fP"
+.br
+This function is for setting M2 Lin working in slave mode
+.PP
+\fB返回:\fP
+.RS 4
+void 
+.RE
+.PP
+
+.PP
+.in +1c
+.in +1c
+.ti -1c
+.RI "void \fBU0_LinSlave\fP ()"
+.br
+.ti -1c
+.RI "void \fBU1_LinSlave\fP ()"
+.br
+.in -1c
+.in -1c
+.PP
+.RI "\fBU1_DataReady\fP"
+.br
+This function returns the state of Rx of Uart0
+.PP
+\fB参数:\fP
+.RS 4
+\fIstate\fP of Rx of Uart1 
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+0=not ready,1=ready 
+.RE
+.PP
+
+.PP
+.in +1c
+.in +1c
+.ti -1c
+.RI "int \fBU1_DataReady\fP ()"
+.br
+.in -1c
+.in -1c
+.PP
+.RI "\fBU1_Read\fP"
+.br
+This function returns the data received via Uart0
+.PP
+\fB参数:\fP
+.RS 4
+\fIdata\fP from Uart1 
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+data from Uart1 
+.RE
+.PP
+
+.PP
+.in +1c
+.in +1c
+.ti -1c
+.RI "long \fBU1_Read\fP ()"
+.br
+.in -1c
+.in -1c
+.PP
+.RI "\fBU1_SendInt\fP"
+.br
+This function is used to send out int data
+.PP
+\fB参数:\fP
+.RS 4
+\fIc\fP int data to send out 
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+void 
+.RE
+.PP
+
+.PP
+.in +1c
+.in +1c
+.ti -1c
+.RI "void \fBU1_SendInt\fP (int c)"
+.br
+.in -1c
+.in -1c
+.PP
+.RI "\fBU1_SendChar\fP"
+.br
+This function is used to send out char data
+.PP
+\fB参数:\fP
+.RS 4
+\fIc\fP char data to send out 
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+void 
+.RE
+.PP
+
+.PP
+.in +1c
+.in +1c
+.ti -1c
+.RI "void \fBU1_SendChar\fP (char c)"
+.br
+.in -1c
+.in -1c
+.PP
+.RI "\fBU1_SendString\fP"
+.br
+This function is used to send out a string
+.PP
+\fB参数:\fP
+.RS 4
+\fIc\fP a pointer points to the string 
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+void 
+.RE
+.PP
+
+.PP
+.in +1c
+.in +1c
+.ti -1c
+.RI "void \fBU1_SendString\fP (char *c)"
+.br
+.in -1c
+.in -1c
+.PP
+.RI "\fBU1_LinMaster\fP"
+.br
+This function is for setting M2 Lin working in master mode
+.PP
+\fB参数:\fP
+.RS 4
+\fIbrklength\fP the length of the break signal,0=normal length,1=extreme length 
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+void 
+.RE
+.PP
+
+.PP
+.in +1c
+.in +1c
+.ti -1c
+.RI "void \fBU1_LinMaster\fP (int brklength)"
+.br
+.in -1c
+.in -1c
+.PP
+.RI "\fBSys_Irq\fP"
+.br
+This function is used to enable or unable the system Irq\&.
+.PP
+\fB参数:\fP
+.RS 4
+\fIenable\fP the value of the switch 
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+void 
+.RE
+.PP
+
+.PP
+.in +1c
+.in +1c
+.ti -1c
+.RI "void \fBSys_Irq\fP (int enable)"
+.br
+.in -1c
+.in -1c
+.PP
+.RI "\fBU0_DataIrq\fP"
+.br
+This function is used to enable or unable the Uart0 data ready Irq\&.
+.PP
+\fB参数:\fP
+.RS 4
+\fIenable\fP the value of the switch 
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+void 
+.RE
+.PP
+
+.PP
+.in +1c
+.in +1c
+.ti -1c
+.RI "void \fBU0_DataIrq\fP (int enable)"
+.br
+.in -1c
+.in -1c
+.PP
+.RI "\fBU0_IrqClr\fP"
+.br
+This function is used to clear the Irq flag of Uart0
+.PP
+\fB返回:\fP
+.RS 4
+void 
+.RE
+.PP
+
+.PP
+.in +1c
+.in +1c
+.ti -1c
+.RI "void \fBU0_IrqClr\fP ()"
+.br
+.in -1c
+.in -1c
+.PP
+.RI "\fBU1_DataIrq\fP"
+.br
+This function is used to enable or unable the Uart1 data ready Irq\&.
+.PP
+\fB参数:\fP
+.RS 4
+\fIenable\fP the value of the switch 
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+void 
+.RE
+.PP
+
+.PP
+.in +1c
+.in +1c
+.ti -1c
+.RI "void \fBU1_DataIrq\fP (int enable)"
+.br
+.in -1c
+.in -1c
+.PP
+.RI "\fBU1_IrqClr\fP"
+.br
+This function is used to clear the Irq flag of Uart1
+.PP
+\fB返回:\fP
+.RS 4
+void 
+.RE
+.PP
+
+.PP
+.in +1c
+.in +1c
+.ti -1c
+.RI "void \fBU1_IrqClr\fP ()"
+.br
+.in -1c
+.in -1c
+.PP
+.RI "\fBpower\fP"
+.br
+The function is for calculating a^b\&.
+.PP
+\fB参数:\fP
+.RS 4
+\fIa\fP a of a^b 
+.br
+\fIb\fP b of a^b 
+.br
+\fIa\fP 
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+the result of a^b 
+.RE
+.PP
+
+.PP
+.in +1c
+.in +1c
+.ti -1c
+.RI "int \fBpower\fP (int a, int b)"
+.br
+.in -1c
+.in -1c
+.PP
+.RI "\fBhexToDec\fP"
+.br
+This function is used for converting hex style number into dec style string\&.
+.PP
+\fB参数:\fP
+.RS 4
+\fIhex\fP the source number 
+.br
+\fIdec\fP the pointer points to the result array 
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+decimal style string 
+.RE
+.PP
+\fB注解:\fP
+.RS 4
+This function is not recommended to use in released version\&. 
+.RE
+.PP
+
+.PP
+.in +1c
+.in +1c
+.ti -1c
+.RI "void \fBhexToDec\fP (int hex, char *dec)"
+.br
+.in -1c
+.in -1c
+.PP
+.RI "\fBDHT11\fP"
+.br
+This function is for DHT11 humidity-temperature sensor\&. The function drives DHT11 sensor via IO0 and stores the result\&.
+.PP
+\fB参数:\fP
+.RS 4
+\fIa\fP pointer points to an int result array 
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+void 
+.RE
+.PP
+
+.PP
+.in +1c
+.in +1c
+.ti -1c
+.RI "void \fBDHT11\fP (int *result)"
+.br
+.in -1c
+.in -1c
+.PP
+.RI "\fBgetRespond\fP"
+.br
+This function is used to get responce from WiFiLPT100\&.
+.PP
+\fB参数:\fP
+.RS 4
+\fIrespond\fP 
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+data from WiFiLPT100 module via Uart1 
+.RE
+.PP
+
+.PP
+.in +1c
+.in +1c
+.ti -1c
+.RI "void \fBgetRespond\fP (char *respond)"
+.br
+.in -1c
+.in -1c
+.PP
+.RI "\fBenterComm\fP"
+.br
+This function is used to set WiFiLPT100 enter Command mode\&.
+.PP
+\fB参数:\fP
+.RS 4
+\fIoperation\fP result 
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+0=failure, 1=success 
+.RE
+.PP
+
+.PP
+.in +1c
+.in +1c
+.ti -1c
+.RI "short \fBenterComm\fP ()"
+.br
+.in -1c
+.in -1c
+.PP
+.RI "\fBexitComm\fP"
+.br
+This function is used to set WiFiLPT100 exit Command mode\&.
+.PP
+\fB返回:\fP
+.RS 4
+void 
+.RE
+.PP
+
+.PP
+.in +1c
+.in +1c
+.ti -1c
+.RI "void \fBexitComm\fP ()"
+.br
+.in -1c
+.in -1c
+.PP
+.RI "\fBgetUartF\fP"
+.br
+This function is for WiFiLPT100\&. This function is used to get the preference of Uart Frame Mode enable
+.PP
+\fB参数:\fP
+.RS 4
+\fIUartF\fP a pointer points to the result array 
+.br
+\fIthe\fP present preference 
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+void 
+.RE
+.PP
+
+.PP
+.in +1c
+.in +1c
+.ti -1c
+.RI "void \fBgetUartF\fP (char *UartF)"
+.br
+.in -1c
+.in -1c
+.PP
+.RI "\fBsetUartF\fP"
+.br
+This function is for WiFiLPT100\&. This function is used to setup the preference of Uart Frame Mode enable
+.PP
+\fB参数:\fP
+.RS 4
+\fIUartF\fP a pointer points to the parameter array 
+.br
+\fIoperation\fP result 
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+0=failure,1=success 
+.RE
+.PP
+
+.PP
+.in +1c
+.in +1c
+.ti -1c
+.RI "short \fBsetUartF\fP (char *UartF)"
+.br
+.in -1c
+.in -1c
+.PP
+.RI "\fBgetUartFT\fP"
+.br
+This function is for WiFiLPT100\&. This function is used to get the preference of time between 2 Uart Frames\&.
+.PP
+\fB参数:\fP
+.RS 4
+\fIUartFT\fP a pointer points to the result array 
+.br
+\fIthe\fP present preference 
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+void 
+.RE
+.PP
+
+.PP
+.in +1c
+.in +1c
+.ti -1c
+.RI "void \fBgetUartFT\fP (char *UartFT)"
+.br
+.in -1c
+.in -1c
+.PP
+.RI "\fBsetUartFT\fP"
+.br
+This function is for WiFiLPT100\&. This function is used to setup the preference of time between 2 Uart Frames\&.
+.PP
+\fB参数:\fP
+.RS 4
+\fIUartFT\fP a pointer points to the parameter array 
+.br
+\fIoperation\fP result 
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+0=failure,1=success 
+.RE
+.PP
+
+.PP
+.in +1c
+.in +1c
+.ti -1c
+.RI "short \fBsetUartFT\fP (char *UartFT)"
+.br
+.in -1c
+.in -1c
+.PP
+.RI "\fBgetUartFL\fP"
+.br
+This function is for WiFiLPT100\&. This function is used to get the preference of Uart Frame length\&.
+.PP
+\fB参数:\fP
+.RS 4
+\fIUartFL\fP a pointer points to the result array 
+.br
+\fIthe\fP present preference 
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+void 
+.RE
+.PP
+
+.PP
+.in +1c
+.in +1c
+.ti -1c
+.RI "void \fBgetUartFL\fP (char *UartFL)"
+.br
+.in -1c
+.in -1c
+.PP
+.RI "\fBsetUartFL\fP"
+.br
+This function is for WiFiLPT100\&. This function is used to set the preference of Uart Frame length\&.
+.PP
+\fB参数:\fP
+.RS 4
+\fIUartFL\fP a pointer points to the parameter array 
+.br
+\fIoperation\fP result 
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+0=failure,1=success 
+.RE
+.PP
+
+.PP
+.in +1c
+.in +1c
+.ti -1c
+.RI "short \fBsetUartFL\fP (char *UartFL)"
+.br
+.in -1c
+.in -1c
+.PP
+.RI "\fBgetUartTE\fP"
+.br
+This function is for WiFiLPT100\&. This function is used to get the preference of Uart FreeFrame Mode\&.
+.PP
+\fB参数:\fP
+.RS 4
+\fIUartTE\fP a pointer points to the result array 
+.br
+\fIthe\fP present preference 
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+void 
+.RE
+.PP
+
+.PP
+.in +1c
+.in +1c
+.ti -1c
+.RI "void \fBgetUartTE\fP (char *UartTE)"
+.br
+.in -1c
+.in -1c
+.PP
+.RI "\fBsetUartTE\fP"
+.br
+This function is for WiFiLPT100\&. This function is used to set the preference of Uart FreeFrame Mode\&.
+.PP
+\fB参数:\fP
+.RS 4
+\fIUartTE\fP a pointer points to the parameter array 
+.br
+\fIoperation\fP result 
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+0=failure,1=success 
+.RE
+.PP
+
+.PP
+.in +1c
+.in +1c
+.ti -1c
+.RI "short \fBsetUartTE\fP (char *UartTE)"
+.br
+.in -1c
+.in -1c
+.PP
+.RI "\fBgetSSID\fP"
+.br
+This function is for WiFiLPT100\&. This function is used to get the preference of target AP's SSID\&.
+.PP
+\fB参数:\fP
+.RS 4
+\fISSID\fP a pointer points to the result array 
+.br
+\fIthe\fP present preference 
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+void 
+.RE
+.PP
+
+.PP
+.in +1c
+.in +1c
+.ti -1c
+.RI "void \fBgetSSID\fP (char *SSID)"
+.br
+.in -1c
+.in -1c
+.PP
+.RI "\fBsetSSID\fP"
+.br
+This function is for WiFiLPT100\&. This function is used to set the preference of target AP's SSID\&.
+.PP
+\fB参数:\fP
+.RS 4
+\fISSID\fP a pointer points to the parameter array 
+.br
+\fIoperation\fP result 
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+0=failure,1=success 
+.RE
+.PP
+
+.PP
+.in +1c
+.in +1c
+.ti -1c
+.RI "short \fBsetSSID\fP (char *SSID)"
+.br
+.in -1c
+.in -1c
+.PP
+.RI "\fBgetWSKEY\fP"
+.br
+This function is for WiFiLPT100\&. This function is used to get the preference of target AP's Key\&.
+.PP
+\fB参数:\fP
+.RS 4
+\fIWSKEY\fP a pointer points to the result array 
+.br
+\fIthe\fP present preference 
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+void 
+.RE
+.PP
+
+.PP
+.in +1c
+.in +1c
+.ti -1c
+.RI "void \fBgetWSKEY\fP (char *WSKEY)"
+.br
+.in -1c
+.in -1c
+.PP
+.RI "\fBsetWSKEY\fP"
+.br
+This function is for WiFiLPT100\&. This function is used to set the preference of target AP's Key\&.
+.PP
+\fB参数:\fP
+.RS 4
+\fIauth\fP authorization method 
+.br
+\fIencry\fP encry method 
+.br
+\fIpasswd\fP password 
+.br
+\fIoperation\fP result 
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+0=failure,1=success 
+.RE
+.PP
+
+.PP
+.in +1c
+.in +1c
+.ti -1c
+.RI "short \fBsetWSKEY\fP (char *auth, char *encry, char *passwd)"
+.br
+.in -1c
+.in -1c
+.PP
+.RI "\fBgetLinkState\fP"
+.br
+This function is for WiFiLPT100\&. This function is used to get the state of WiFi connection
+.PP
+\fB参数:\fP
+.RS 4
+\fIstate\fP a pointer points to the result array 
+.br
+\fIthe\fP present preference 
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+void 
+.RE
+.PP
+
+.PP
+.in +1c
+.in +1c
+.ti -1c
+.RI "void \fBgetLinkState\fP (char *state)"
+.br
+.in -1c
+.in -1c
+.PP
+.RI "\fBgetSockANETP\fP"
+.br
+This function is for WiFiLPT100\&. This function is used to get the state of Sock A TCP\&.
+.PP
+\fB参数:\fP
+.RS 4
+\fINETP\fP a pointer points to the result array 
+.br
+\fIthe\fP present preference 
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+void 
+.RE
+.PP
+
+.PP
+.in +1c
+.in +1c
+.ti -1c
+.RI "void \fBgetSockANETP\fP (char *NETP)"
+.br
+.ti -1c
+.RI "void \fBgetSockATCPLK\fP (char *TCPLK)"
+.br
+.in -1c
+.in -1c
+.PP
+.RI "\fBsetSockANETP\fP"
+.br
+This function is for WiFiLPT100\&. This function is used to set the preference of Sock A\&.
+.PP
+\fB参数:\fP
+.RS 4
+\fIprotocol\fP TCP or UDP 
+.br
+\fICS\fP SERVER or CLIENT 
+.br
+\fIport\fP the port to communicate 
+.br
+\fIip\fP the IP address of target server 
+.br
+\fIoperation\fP result 
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+0=failure,1=success 
+.RE
+.PP
+
+.PP
+.in +1c
+.in +1c
+.ti -1c
+.RI "short \fBsetSockANETP\fP (char *protocol, char *CS, char *port, char *ip)"
+.br
+.in -1c
+.in -1c
+.SH "详细描述"
+.PP 
+Functions for modules 
+
+
+.PP
+\fB作者:\fP
+.RS 4
+ASTRO 
+.RE
+.PP
+\fB日期:\fP
+.RS 4
+2017-05-16 
+.RE
+.PP
+\fB版本:\fP
+.RS 4
+0\&.1\&.0 
+.RE
+.PP
+\fB版权所有:\fP
+.RS 4
+ASTRO 
+.RE
+.PP
+
+.PP
+在文件 \fBModule\&.c\fP 中定义\&.
+.SH "宏定义说明"
+.PP 
+.SS "#define SYS_GPIO0_REG   0x1f800705"
+
+.PP
+在文件 Module\&.c 第 34 行定义\&.
+.SS "#define SYS_GPIO1_REG   0x1f800706"
+
+.PP
+在文件 Module\&.c 第 35 行定义\&.
+.SS "#define SYS_IOCTL_REG   0x1f800704"
+
+.PP
+在文件 Module\&.c 第 33 行定义\&.
+.SS "#define SYS_IRQ_REG   0x1f800707"
+
+.PP
+在文件 Module\&.c 第 36 行定义\&.
+.SS "#define U0_BRP_REG   0x1f800007"
+
+.PP
+在文件 Module\&.c 第 22 行定义\&.
+.SS "#define U0_BUSY_REG   0x1f800001"
+
+.PP
+在文件 Module\&.c 第 16 行定义\&.
+.SS "#define U0_CLRIRQ_REG   0x1f800003"
+
+.PP
+在文件 Module\&.c 第 18 行定义\&.
+.SS "#define U0_CTL0_REG   0x1f800004"
+
+.PP
+在文件 Module\&.c 第 19 行定义\&.
+.SS "#define U0_DATA_RDY_REG   0x1f800005"
+
+.PP
+在文件 Module\&.c 第 20 行定义\&.
+.SS "#define U0_LINBRK_REG   0x1f800006"
+
+.PP
+在文件 Module\&.c 第 21 行定义\&.
+.SS "#define U0_READ_REG   0x1f800000"
+
+.PP
+在文件 Module\&.c 第 15 行定义\&.
+.SS "#define U0_WRITE_REG   0x1f800002"
+
+.PP
+在文件 Module\&.c 第 17 行定义\&.
+.SS "#define U1_BRP_REG   0x1f800807"
+
+.PP
+在文件 Module\&.c 第 31 行定义\&.
+.SS "#define U1_BUSY_REG   0x1f800801"
+
+.PP
+在文件 Module\&.c 第 25 行定义\&.
+.SS "#define U1_CLRIRQ_REG   0x1f800803"
+
+.PP
+在文件 Module\&.c 第 27 行定义\&.
+.SS "#define U1_CTL0_REG   0x1f800804"
+
+.PP
+在文件 Module\&.c 第 28 行定义\&.
+.SS "#define U1_DATA_RDY_REG   0x1f800805"
+
+.PP
+在文件 Module\&.c 第 29 行定义\&.
+.SS "#define U1_LINBRK_REG   0x1f800806"
+
+.PP
+在文件 Module\&.c 第 30 行定义\&.
+.SS "#define U1_READ_REG   0x1f800800"
+
+.PP
+在文件 Module\&.c 第 24 行定义\&.
+.SS "#define U1_WRITE_REG   0x1f800802"
+
+.PP
+在文件 Module\&.c 第 26 行定义\&.
+.SH "函数说明"
+.PP 
+.SS "void DHT11 (int * result)"
+
+.PP
+在文件 Module\&.c 第 294 行定义\&.
+.SS "short enterComm ()"
+
+.PP
+在文件 Module\&.c 第 353 行定义\&.
+.SS "void exitComm ()"
+
+.PP
+在文件 Module\&.c 第 371 行定义\&.
+.SS "void getLinkState (char * state)"
+
+.PP
+在文件 Module\&.c 第 641 行定义\&.
+.SS "void getRespond (char * respond)"
+
+.PP
+在文件 Module\&.c 第 343 行定义\&.
+.SS "void getSockANETP (char * NETP)"
+
+.PP
+在文件 Module\&.c 第 661 行定义\&.
+.SS "void getSockATCPLK (char * TCPLK)"
+
+.PP
+在文件 Module\&.c 第 711 行定义\&.
+.SS "void getSSID (char * SSID)"
+
+.PP
+在文件 Module\&.c 第 550 行定义\&.
+.SS "void getUartF (char * UartF)"
+
+.PP
+在文件 Module\&.c 第 382 行定义\&.
+.SS "void getUartFL (char * UartFL)"
+
+.PP
+在文件 Module\&.c 第 466 行定义\&.
+.SS "void getUartFT (char * UartFT)"
+
+.PP
+在文件 Module\&.c 第 424 行定义\&.
+.SS "void getUartTE (char * UartTE)"
+
+.PP
+在文件 Module\&.c 第 508 行定义\&.
+.SS "void getWSKEY (char * WSKEY)"
+
+.PP
+在文件 Module\&.c 第 593 行定义\&.
+.SS "void hexToDec (int hex, char * dec)"
+
+.PP
+在文件 Module\&.c 第 262 行定义\&.
+.SS "int power (int a, int b)"
+
+.PP
+在文件 Module\&.c 第 247 行定义\&.
+.SS "short setSockANETP (char * protocol, char * CS, char * port, char * ip)"
+
+.PP
+在文件 Module\&.c 第 684 行定义\&.
+.SS "short setSSID (char * SSID)"
+
+.PP
+在文件 Module\&.c 第 570 行定义\&.
+.SS "short setUartF (char * UartF)"
+
+.PP
+在文件 Module\&.c 第 402 行定义\&.
+.SS "short setUartFL (char * UartFL)"
+
+.PP
+在文件 Module\&.c 第 486 行定义\&.
+.SS "short setUartFT (char * UartFT)"
+
+.PP
+在文件 Module\&.c 第 444 行定义\&.
+.SS "short setUartTE (char * UartTE)"
+
+.PP
+在文件 Module\&.c 第 528 行定义\&.
+.SS "short setWSKEY (char * auth, char * encry, char * passwd)"
+
+.PP
+在文件 Module\&.c 第 615 行定义\&.
+.SS "void Sys_Irq (int enable)"
+
+.PP
+在文件 Module\&.c 第 194 行定义\&.
+.SS "void U0_DataIrq (int enable)"
+
+.PP
+在文件 Module\&.c 第 204 行定义\&.
+.SS "int U0_DataReady ()"
+
+.PP
+在文件 Module\&.c 第 46 行定义\&.
+.SS "void U0_IrqClr ()"
+
+.PP
+在文件 Module\&.c 第 214 行定义\&.
+.SS "void U0_LinMaster (int brklength)"
+
+.PP
+在文件 Module\&.c 第 98 行定义\&.
+.SS "void U0_LinSlave ()"
+
+.PP
+在文件 Module\&.c 第 108 行定义\&.
+.SS "long U0_Read ()"
+
+.PP
+在文件 Module\&.c 第 55 行定义\&.
+.SS "void U0_SendChar (char c)"
+
+.PP
+在文件 Module\&.c 第 75 行定义\&.
+.SS "void U0_SendInt (int c)"
+
+.PP
+在文件 Module\&.c 第 65 行定义\&.
+.SS "void U0_SendString (char * c)"
+
+.PP
+在文件 Module\&.c 第 85 行定义\&.
+.SS "void U1_DataIrq (int enable)"
+
+.PP
+在文件 Module\&.c 第 223 行定义\&.
+.SS "int U1_DataReady ()"
+
+.PP
+在文件 Module\&.c 第 120 行定义\&.
+.SS "void U1_IrqClr ()"
+
+.PP
+在文件 Module\&.c 第 233 行定义\&.
+.SS "void U1_LinMaster (int brklength)"
+
+.PP
+在文件 Module\&.c 第 172 行定义\&.
+.SS "void U1_LinSlave ()"
+
+.PP
+在文件 Module\&.c 第 182 行定义\&.
+.SS "long U1_Read ()"
+
+.PP
+在文件 Module\&.c 第 129 行定义\&.
+.SS "void U1_SendChar (char c)"
+
+.PP
+在文件 Module\&.c 第 149 行定义\&.
+.SS "void U1_SendInt (int c)"
+
+.PP
+在文件 Module\&.c 第 139 行定义\&.
+.SS "void U1_SendString (char * c)"
+
+.PP
+在文件 Module\&.c 第 159 行定义\&.
+.SH "作者"
+.PP 
+由 Doyxgen 通过分析 SmartPhylab 的 源代码自动生成\&.

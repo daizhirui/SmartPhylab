@@ -1,0 +1,265 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>SmartPhylab: phyLab.c 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">SmartPhylab
+   &#160;<span id="projectnumber">0.1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('phy_lab_8c.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">phyLab.c 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>main program of M2 Lab  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="mcu_8h_source.html">mcu.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_module_8h_source.html">Module.h</a>&quot;</code><br />
+</div>
+<p><a href="phy_lab_8c_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr><td colspan="2"><div class="groupHeader">getCommPC</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>This function is used to get the command from PC</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">comm</td><td>a pointer points to the result array </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+</div></td></tr>
+<tr class="memitem:adc1c6fe69320d399d1f9280c7822d191"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="phy_lab_8c.html#adc1c6fe69320d399d1f9280c7822d191">getCommPC</a> (char *comm)</td></tr>
+<tr class="separator:adc1c6fe69320d399d1f9280c7822d191"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">setWiFiSTA</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>This function is used to setup the STA of WiFiLPT100 module</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">comm</td><td>a pointer points to the command received from PC </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+</div></td></tr>
+<tr class="memitem:af0ecce242dfa1d6a8278a145c8c41f27"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="phy_lab_8c.html#af0ecce242dfa1d6a8278a145c8c41f27">setWiFiSTA</a> (char *comm)</td></tr>
+<tr class="separator:af0ecce242dfa1d6a8278a145c8c41f27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">setWiFiTCP</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>This function is used to setup the TCP of WiFiLPT100 module</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">comm</td><td>a pointer points to the command received from PC </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+</div></td></tr>
+<tr class="memitem:ae73c5ae3c3aa4f001cfa7f51e5a018fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="phy_lab_8c.html#ae73c5ae3c3aa4f001cfa7f51e5a018fc">setWiFiTCP</a> (char *comm)</td></tr>
+<tr class="separator:ae73c5ae3c3aa4f001cfa7f51e5a018fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">user_interrupt</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>This function is used to process interrupt</p>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+</div></td></tr>
+<tr class="memitem:af618a15bb82bd5e68a5aa84945282bd1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="phy_lab_8c.html#af618a15bb82bd5e68a5aa84945282bd1">user_interrupt</a> ()</td></tr>
+<tr class="separator:af618a15bb82bd5e68a5aa84945282bd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">main</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>main function</p>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+</div></td></tr>
+<tr class="memitem:acdef7a1fd863a6d3770c1268cb06add3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="phy_lab_8c.html#acdef7a1fd863a6d3770c1268cb06add3">main</a> ()</td></tr>
+<tr class="separator:acdef7a1fd863a6d3770c1268cb06add3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>main program of M2 Lab </p>
+<dl class="section author"><dt>作者</dt><dd>ASTRO </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2017-05-16 </dd></dl>
+<dl class="section version"><dt>版本</dt><dd>0.1.0 </dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>ASTRO </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="phy_lab_8c_source.html">phyLab.c</a> 中定义.</p>
+</div><h2 class="groupheader">函数说明</h2>
+<a id="adc1c6fe69320d399d1f9280c7822d191"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc1c6fe69320d399d1f9280c7822d191">&#9670;&nbsp;</a></span>getCommPC()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void getCommPC </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>comm</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="phy_lab_8c_source.html">phyLab.c</a> 第 <a class="el" href="phy_lab_8c_source.html#l00017">17</a> 行定义.</p>
+
+</div>
+</div>
+<a id="acdef7a1fd863a6d3770c1268cb06add3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdef7a1fd863a6d3770c1268cb06add3">&#9670;&nbsp;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void main </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="phy_lab_8c_source.html">phyLab.c</a> 第 <a class="el" href="phy_lab_8c_source.html#l00113">113</a> 行定义.</p>
+
+</div>
+</div>
+<a id="af0ecce242dfa1d6a8278a145c8c41f27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0ecce242dfa1d6a8278a145c8c41f27">&#9670;&nbsp;</a></span>setWiFiSTA()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setWiFiSTA </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>comm</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="phy_lab_8c_source.html">phyLab.c</a> 第 <a class="el" href="phy_lab_8c_source.html#l00028">28</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ae73c5ae3c3aa4f001cfa7f51e5a018fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae73c5ae3c3aa4f001cfa7f51e5a018fc">&#9670;&nbsp;</a></span>setWiFiTCP()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setWiFiTCP </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>comm</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="phy_lab_8c_source.html">phyLab.c</a> 第 <a class="el" href="phy_lab_8c_source.html#l00060">60</a> 行定义.</p>
+
+</div>
+</div>
+<a id="af618a15bb82bd5e68a5aa84945282bd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af618a15bb82bd5e68a5aa84945282bd1">&#9670;&nbsp;</a></span>user_interrupt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void user_interrupt </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="phy_lab_8c_source.html">phyLab.c</a> 第 <a class="el" href="phy_lab_8c_source.html#l00090">90</a> 行定义.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="phy_lab_8c.html">phyLab.c</a></li>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

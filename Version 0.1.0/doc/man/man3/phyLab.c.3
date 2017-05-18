@@ -1,0 +1,180 @@
+.TH "phyLab.c" 3 "2017年 五月 18日 星期四" "Version 0.1.0" "SmartPhylab" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+phyLab.c \- main program of M2 Lab  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'mcu\&.h'\fP
+.br
+\fC#include 'Module\&.h'\fP
+.br
+
+.SS "函数"
+
+.PP
+.RI "\fBgetCommPC\fP"
+.br
+This function is used to get the command from PC
+.PP
+\fB参数:\fP
+.RS 4
+\fIcomm\fP a pointer points to the result array 
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+void 
+.RE
+.PP
+
+.PP
+.in +1c
+.in +1c
+.ti -1c
+.RI "void \fBgetCommPC\fP (char *comm)"
+.br
+.in -1c
+.in -1c
+.PP
+.RI "\fBsetWiFiSTA\fP"
+.br
+This function is used to setup the STA of WiFiLPT100 module
+.PP
+\fB参数:\fP
+.RS 4
+\fIcomm\fP a pointer points to the command received from PC 
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+void 
+.RE
+.PP
+
+.PP
+.in +1c
+.in +1c
+.ti -1c
+.RI "void \fBsetWiFiSTA\fP (char *comm)"
+.br
+.in -1c
+.in -1c
+.PP
+.RI "\fBsetWiFiTCP\fP"
+.br
+This function is used to setup the TCP of WiFiLPT100 module
+.PP
+\fB参数:\fP
+.RS 4
+\fIcomm\fP a pointer points to the command received from PC 
+.RE
+.PP
+\fB返回:\fP
+.RS 4
+void 
+.RE
+.PP
+
+.PP
+.in +1c
+.in +1c
+.ti -1c
+.RI "void \fBsetWiFiTCP\fP (char *comm)"
+.br
+.in -1c
+.in -1c
+.PP
+.RI "\fBuser_interrupt\fP"
+.br
+This function is used to process interrupt
+.PP
+\fB返回:\fP
+.RS 4
+void 
+.RE
+.PP
+
+.PP
+.in +1c
+.in +1c
+.ti -1c
+.RI "void \fBuser_interrupt\fP ()"
+.br
+.in -1c
+.in -1c
+.PP
+.RI "\fBmain\fP"
+.br
+main function
+.PP
+\fB返回:\fP
+.RS 4
+void 
+.RE
+.PP
+
+.PP
+.in +1c
+.in +1c
+.ti -1c
+.RI "void \fBmain\fP ()"
+.br
+.in -1c
+.in -1c
+.SH "详细描述"
+.PP 
+main program of M2 Lab 
+
+
+.PP
+\fB作者:\fP
+.RS 4
+ASTRO 
+.RE
+.PP
+\fB日期:\fP
+.RS 4
+2017-05-16 
+.RE
+.PP
+\fB版本:\fP
+.RS 4
+0\&.1\&.0 
+.RE
+.PP
+\fB版权所有:\fP
+.RS 4
+ASTRO 
+.RE
+.PP
+
+.PP
+在文件 \fBphyLab\&.c\fP 中定义\&.
+.SH "函数说明"
+.PP 
+.SS "void getCommPC (char * comm)"
+
+.PP
+在文件 phyLab\&.c 第 17 行定义\&.
+.SS "void main ()"
+
+.PP
+在文件 phyLab\&.c 第 113 行定义\&.
+.SS "void setWiFiSTA (char * comm)"
+
+.PP
+在文件 phyLab\&.c 第 28 行定义\&.
+.SS "void setWiFiTCP (char * comm)"
+
+.PP
+在文件 phyLab\&.c 第 60 行定义\&.
+.SS "void user_interrupt ()"
+
+.PP
+在文件 phyLab\&.c 第 90 行定义\&.
+.SH "作者"
+.PP 
+由 Doyxgen 通过分析 SmartPhylab 的 源代码自动生成\&.

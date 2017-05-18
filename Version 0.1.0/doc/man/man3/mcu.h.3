@@ -1,0 +1,401 @@
+.TH "mcu.h" 3 "2017年 五月 18日 星期四" "Version 0.1.0" "SmartPhylab" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+mcu.h
+.SH SYNOPSIS
+.br
+.PP
+.SS "宏定义"
+
+.in +1c
+.ti -1c
+.RI "#define \fBSYNC_LEN\fP   8"
+.br
+.ti -1c
+.RI "#define \fBPAC_HEAD\fP   0x1"
+.br
+.ti -1c
+.RI "#define \fBPAC_TAIL\fP   0x17"
+.br
+.ti -1c
+.RI "#define \fBMAC_ID\fP   0x1001f3f0"
+.br
+.ti -1c
+.RI "#define \fBDBG_ACK\fP   0x5"
+.br
+.ti -1c
+.RI "#define \fBWRITE_ACK\fP   0x6"
+.br
+.ti -1c
+.RI "#define \fBDATA_START\fP   0x2"
+.br
+.ti -1c
+.RI "#define \fBDATA_END\fP   0x3"
+.br
+.ti -1c
+.RI "#define \fBMASTER_ID\fP   0x20"
+.br
+.ti -1c
+.RI "#define \fBSTUDIO_ID\fP   0x20"
+.br
+.ti -1c
+.RI "#define \fBBROADCAST_ID\fP   0x20"
+.br
+.ti -1c
+.RI "#define \fBDATA_SIZE\fP   256"
+.br
+.ti -1c
+.RI "#define \fBUSER_INT\fP   0x01001FFC"
+.br
+.ti -1c
+.RI "#define \fBPC_LOC\fP   0x01001FF8"
+.br
+.ti -1c
+.RI "#define \fBINT_COUNT\fP   0x01001FF4"
+.br
+.ti -1c
+.RI "#define \fBUART_DATA_RDY\fP   0x1f800005"
+.br
+.ti -1c
+.RI "#define \fBUART_OSC_REG\fP   0x1f800702"
+.br
+.ti -1c
+.RI "#define \fBSYS_CTL2_REG\fP   0x1f800702"
+.br
+.ti -1c
+.RI "#define \fBSYS_IOCTL_REG\fP   0x1f800704"
+.br
+.ti -1c
+.RI "#define \fBSYS_IRQ_REG\fP   0x1f800707"
+.br
+.ti -1c
+.RI "#define \fBSYS_CTL0_REG\fP   0x1f800700"
+.br
+.ti -1c
+.RI "#define \fBINT_CTL0_REG\fP   0x1f800500"
+.br
+.ti -1c
+.RI "#define \fBINT_CTL1_REG\fP   0x1f800501"
+.br
+.ti -1c
+.RI "#define \fBINT_CTL2_REG\fP   0x1f800502"
+.br
+.ti -1c
+.RI "#define \fBINT_CLR_REG\fP   0x1f800503"
+.br
+.ti -1c
+.RI "#define \fBSD_CTL_REG\fP   0x1f800c00"
+.br
+.ti -1c
+.RI "#define \fBuart_bport\fP   0x1f800001"
+.br
+.ti -1c
+.RI "#define \fBuart_wport\fP   0x1f800002"
+.br
+.ti -1c
+.RI "#define \fBuart_rport\fP   0x1f800000"
+.br
+.ti -1c
+.RI "#define \fBuart_rdy_port\fP   0x1f800005"
+.br
+.ti -1c
+.RI "#define \fBuart_aport\fP   0x1f800003"
+.br
+.ti -1c
+.RI "#define \fBWRITE_BUSY\fP   0x0001"
+.br
+.ti -1c
+.RI "#define \fBREAD_RDY\fP   0x0001"
+.br
+.ti -1c
+.RI "#define \fBMemoryRead8\fP(A)   (*(volatile char*)(A))"
+.br
+.ti -1c
+.RI "#define \fBMemoryRead16\fP(A)   (*(volatile unsigned short*)(A))"
+.br
+.ti -1c
+.RI "#define \fBMemoryRead\fP(A)   (*(volatile unsigned int*)(A))"
+.br
+.ti -1c
+.RI "#define \fBMemoryRead32\fP(A)   (*(volatile unsigned long*)(A))"
+.br
+.ti -1c
+.RI "#define \fBMemoryWrite8\fP(A,  V)   *(volatile char*)(A)=(V)"
+.br
+.ti -1c
+.RI "#define \fBMemoryWrite16\fP(A,  V)   *(volatile unsigned short*)(A)=(V)"
+.br
+.ti -1c
+.RI "#define \fBMemoryWrite\fP(A,  V)   *(volatile unsigned int*)(A)=(V)"
+.br
+.ti -1c
+.RI "#define \fBMemoryWrite32\fP(A,  V)   *(volatile unsigned long*)(A)=(V)"
+.br
+.ti -1c
+.RI "#define \fBMemoryAnd8\fP(A,  V)   *(volatile char*)(A)&=(V)"
+.br
+.ti -1c
+.RI "#define \fBMemoryAnd16\fP(A,  V)   *(volatile unsigned short*)(A)&=(V)"
+.br
+.ti -1c
+.RI "#define \fBMemoryAnd\fP(A,  V)   *(volatile unsigned int*)(A)&=(V)"
+.br
+.ti -1c
+.RI "#define \fBMemoryAnd32\fP(A,  V)   *(volatile unsigned long*)(A)&=(V)"
+.br
+.ti -1c
+.RI "#define \fBMemoryOr8\fP(A,  V)   *(volatile char*)(A)|=(V)"
+.br
+.ti -1c
+.RI "#define \fBMemoryOr16\fP(A,  V)   *(volatile unsigned short*)(A)|=(V)"
+.br
+.ti -1c
+.RI "#define \fBMemoryOr\fP(A,  V)   *(volatile unsigned int*)(A)|=(V)"
+.br
+.ti -1c
+.RI "#define \fBMemoryOr32\fP(A,  V)   *(volatile unsigned long*)(A)|=(V)"
+.br
+.ti -1c
+.RI "#define \fBMemoryBitAt\fP(A,  V)   (((*(volatile unsigned int*)(A))&(1<<V))>>V)"
+.br
+.ti -1c
+.RI "#define \fBRT_SYSINT_Flag\fP()   \fBMemoryRead\fP(\fBSYS_IRQ_REG\fP)"
+.br
+.in -1c
+.SS "函数"
+
+.in +1c
+.ti -1c
+.RI "char \fBgetMAC\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetMAC\fP (char id)"
+.br
+.in -1c
+.SS "变量"
+
+.in +1c
+.ti -1c
+.RI "char \fB__mac_id\fP"
+.br
+.in -1c
+.SH "宏定义说明"
+.PP 
+.SS "#define BROADCAST_ID   0x20"
+
+.PP
+在文件 mcu\&.h 第 37 行定义\&.
+.SS "#define DATA_END   0x3"
+
+.PP
+在文件 mcu\&.h 第 34 行定义\&.
+.SS "#define DATA_SIZE   256"
+
+.PP
+在文件 mcu\&.h 第 38 行定义\&.
+.SS "#define DATA_START   0x2"
+
+.PP
+在文件 mcu\&.h 第 33 行定义\&.
+.SS "#define DBG_ACK   0x5"
+
+.PP
+在文件 mcu\&.h 第 31 行定义\&.
+.SS "#define INT_CLR_REG   0x1f800503"
+
+.PP
+在文件 mcu\&.h 第 57 行定义\&.
+.SS "#define INT_COUNT   0x01001FF4"
+
+.PP
+在文件 mcu\&.h 第 44 行定义\&.
+.SS "#define INT_CTL0_REG   0x1f800500"
+
+.PP
+在文件 mcu\&.h 第 54 行定义\&.
+.SS "#define INT_CTL1_REG   0x1f800501"
+
+.PP
+在文件 mcu\&.h 第 55 行定义\&.
+.SS "#define INT_CTL2_REG   0x1f800502"
+
+.PP
+在文件 mcu\&.h 第 56 行定义\&.
+.SS "#define MAC_ID   0x1001f3f0"
+
+.PP
+在文件 mcu\&.h 第 29 行定义\&.
+.SS "#define MASTER_ID   0x20"
+
+.PP
+在文件 mcu\&.h 第 35 行定义\&.
+.SS "#define MemoryAnd(A, V)   *(volatile unsigned int*)(A)&=(V)"
+
+.PP
+在文件 mcu\&.h 第 86 行定义\&.
+.SS "#define MemoryAnd16(A, V)   *(volatile unsigned short*)(A)&=(V)"
+
+.PP
+在文件 mcu\&.h 第 85 行定义\&.
+.SS "#define MemoryAnd32(A, V)   *(volatile unsigned long*)(A)&=(V)"
+
+.PP
+在文件 mcu\&.h 第 87 行定义\&.
+.SS "#define MemoryAnd8(A, V)   *(volatile char*)(A)&=(V)"
+
+.PP
+在文件 mcu\&.h 第 84 行定义\&.
+.SS "#define MemoryBitAt(A, V)   (((*(volatile unsigned int*)(A))&(1<<V))>>V)"
+
+.PP
+在文件 mcu\&.h 第 94 行定义\&.
+.SS "#define MemoryOr(A, V)   *(volatile unsigned int*)(A)|=(V)"
+
+.PP
+在文件 mcu\&.h 第 91 行定义\&.
+.SS "#define MemoryOr16(A, V)   *(volatile unsigned short*)(A)|=(V)"
+
+.PP
+在文件 mcu\&.h 第 90 行定义\&.
+.SS "#define MemoryOr32(A, V)   *(volatile unsigned long*)(A)|=(V)"
+
+.PP
+在文件 mcu\&.h 第 92 行定义\&.
+.SS "#define MemoryOr8(A, V)   *(volatile char*)(A)|=(V)"
+
+.PP
+在文件 mcu\&.h 第 89 行定义\&.
+.SS "#define MemoryRead(A)   (*(volatile unsigned int*)(A))"
+
+.PP
+在文件 mcu\&.h 第 77 行定义\&.
+.SS "#define MemoryRead16(A)   (*(volatile unsigned short*)(A))"
+
+.PP
+在文件 mcu\&.h 第 76 行定义\&.
+.SS "#define MemoryRead32(A)   (*(volatile unsigned long*)(A))"
+
+.PP
+在文件 mcu\&.h 第 78 行定义\&.
+.SS "#define MemoryRead8(A)   (*(volatile char*)(A))"
+
+.PP
+在文件 mcu\&.h 第 75 行定义\&.
+.SS "#define MemoryWrite(A, V)   *(volatile unsigned int*)(A)=(V)"
+
+.PP
+在文件 mcu\&.h 第 81 行定义\&.
+.SS "#define MemoryWrite16(A, V)   *(volatile unsigned short*)(A)=(V)"
+
+.PP
+在文件 mcu\&.h 第 80 行定义\&.
+.SS "#define MemoryWrite32(A, V)   *(volatile unsigned long*)(A)=(V)"
+
+.PP
+在文件 mcu\&.h 第 82 行定义\&.
+.SS "#define MemoryWrite8(A, V)   *(volatile char*)(A)=(V)"
+
+.PP
+在文件 mcu\&.h 第 79 行定义\&.
+.SS "#define PAC_HEAD   0x1"
+
+.PP
+在文件 mcu\&.h 第 27 行定义\&.
+.SS "#define PAC_TAIL   0x17"
+
+.PP
+在文件 mcu\&.h 第 28 行定义\&.
+.SS "#define PC_LOC   0x01001FF8"
+
+.PP
+在文件 mcu\&.h 第 43 行定义\&.
+.SS "#define READ_RDY   0x0001"
+
+.PP
+在文件 mcu\&.h 第 71 行定义\&.
+.SS "#define RT_SYSINT_Flag()   \fBMemoryRead\fP(\fBSYS_IRQ_REG\fP)"
+
+.PP
+在文件 mcu\&.h 第 100 行定义\&.
+.SS "#define SD_CTL_REG   0x1f800c00"
+
+.PP
+在文件 mcu\&.h 第 60 行定义\&.
+.SS "#define STUDIO_ID   0x20"
+
+.PP
+在文件 mcu\&.h 第 36 行定义\&.
+.SS "#define SYNC_LEN   8"
+
+.PP
+在文件 mcu\&.h 第 26 行定义\&.
+.SS "#define SYS_CTL0_REG   0x1f800700"
+
+.PP
+在文件 mcu\&.h 第 52 行定义\&.
+.SS "#define SYS_CTL2_REG   0x1f800702"
+
+.PP
+在文件 mcu\&.h 第 49 行定义\&.
+.SS "#define SYS_IOCTL_REG   0x1f800704"
+
+.PP
+在文件 mcu\&.h 第 50 行定义\&.
+.SS "#define SYS_IRQ_REG   0x1f800707"
+
+.PP
+在文件 mcu\&.h 第 51 行定义\&.
+.SS "#define uart_aport   0x1f800003"
+
+.PP
+在文件 mcu\&.h 第 69 行定义\&.
+.SS "#define uart_bport   0x1f800001"
+
+.PP
+在文件 mcu\&.h 第 65 行定义\&.
+.SS "#define UART_DATA_RDY   0x1f800005"
+
+.PP
+在文件 mcu\&.h 第 46 行定义\&.
+.SS "#define UART_OSC_REG   0x1f800702"
+
+.PP
+在文件 mcu\&.h 第 47 行定义\&.
+.SS "#define uart_rdy_port   0x1f800005"
+
+.PP
+在文件 mcu\&.h 第 68 行定义\&.
+.SS "#define uart_rport   0x1f800000"
+
+.PP
+在文件 mcu\&.h 第 67 行定义\&.
+.SS "#define uart_wport   0x1f800002"
+
+.PP
+在文件 mcu\&.h 第 66 行定义\&.
+.SS "#define USER_INT   0x01001FFC"
+
+.PP
+在文件 mcu\&.h 第 42 行定义\&.
+.SS "#define WRITE_ACK   0x6"
+
+.PP
+在文件 mcu\&.h 第 32 行定义\&.
+.SS "#define WRITE_BUSY   0x0001"
+
+.PP
+在文件 mcu\&.h 第 70 行定义\&.
+.SH "函数说明"
+.PP 
+.SS "char getMAC ()"
+
+.SS "void setMAC (char id)"
+
+.SH "变量说明"
+.PP 
+.SS "char __mac_id"
+
+.SH "作者"
+.PP 
+由 Doyxgen 通过分析 SmartPhylab 的 源代码自动生成\&.

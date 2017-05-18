@@ -1,0 +1,1292 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>SmartPhylab: mcu.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">SmartPhylab
+   &#160;<span id="projectnumber">0.1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('mcu_8h.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">宏定义</a> &#124;
+<a href="#func-members">函数</a> &#124;
+<a href="#var-members">变量</a>  </div>
+  <div class="headertitle">
+<div class="title">mcu.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><a href="mcu_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:ab2044f75719bae5fab1b33e5f1b3e1ea"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mcu_8h.html#ab2044f75719bae5fab1b33e5f1b3e1ea">SYNC_LEN</a>&#160;&#160;&#160;8</td></tr>
+<tr class="separator:ab2044f75719bae5fab1b33e5f1b3e1ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b9040cb056dcc57d776d2d7e4724485"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mcu_8h.html#a0b9040cb056dcc57d776d2d7e4724485">PAC_HEAD</a>&#160;&#160;&#160;0x1</td></tr>
+<tr class="separator:a0b9040cb056dcc57d776d2d7e4724485"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7dc6e028aad2bbadddb1fceffc24687"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mcu_8h.html#af7dc6e028aad2bbadddb1fceffc24687">PAC_TAIL</a>&#160;&#160;&#160;0x17</td></tr>
+<tr class="separator:af7dc6e028aad2bbadddb1fceffc24687"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca69c626499ce2e479703cc526dba84d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mcu_8h.html#aca69c626499ce2e479703cc526dba84d">MAC_ID</a>&#160;&#160;&#160;0x1001f3f0</td></tr>
+<tr class="separator:aca69c626499ce2e479703cc526dba84d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03551f0f8a57ac60892dc98b90fc3427"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mcu_8h.html#a03551f0f8a57ac60892dc98b90fc3427">DBG_ACK</a>&#160;&#160;&#160;0x5</td></tr>
+<tr class="separator:a03551f0f8a57ac60892dc98b90fc3427"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a77526dc8ea2e52f0abfb4c373af822"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mcu_8h.html#a0a77526dc8ea2e52f0abfb4c373af822">WRITE_ACK</a>&#160;&#160;&#160;0x6</td></tr>
+<tr class="separator:a0a77526dc8ea2e52f0abfb4c373af822"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5562e3e4189eff9e71305f172f2b515a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mcu_8h.html#a5562e3e4189eff9e71305f172f2b515a">DATA_START</a>&#160;&#160;&#160;0x2</td></tr>
+<tr class="separator:a5562e3e4189eff9e71305f172f2b515a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ab8d9e7f143cb0c17c688702f755ffa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mcu_8h.html#a8ab8d9e7f143cb0c17c688702f755ffa">DATA_END</a>&#160;&#160;&#160;0x3</td></tr>
+<tr class="separator:a8ab8d9e7f143cb0c17c688702f755ffa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a150a81da38cd990da60c0363014b246b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mcu_8h.html#a150a81da38cd990da60c0363014b246b">MASTER_ID</a>&#160;&#160;&#160;0x20</td></tr>
+<tr class="separator:a150a81da38cd990da60c0363014b246b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf3ba4144515d9560664f4964804fa05"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mcu_8h.html#aaf3ba4144515d9560664f4964804fa05">STUDIO_ID</a>&#160;&#160;&#160;0x20</td></tr>
+<tr class="separator:aaf3ba4144515d9560664f4964804fa05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9fe47395310b34fa1ceb112c9ca10e2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mcu_8h.html#ab9fe47395310b34fa1ceb112c9ca10e2">BROADCAST_ID</a>&#160;&#160;&#160;0x20</td></tr>
+<tr class="separator:ab9fe47395310b34fa1ceb112c9ca10e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af55149bc1f05cf18af067a302e31e3f9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mcu_8h.html#af55149bc1f05cf18af067a302e31e3f9">DATA_SIZE</a>&#160;&#160;&#160;256</td></tr>
+<tr class="separator:af55149bc1f05cf18af067a302e31e3f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4358ad34c2ebafd83f49cb8e73fed3d5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mcu_8h.html#a4358ad34c2ebafd83f49cb8e73fed3d5">USER_INT</a>&#160;&#160;&#160;0x01001FFC</td></tr>
+<tr class="separator:a4358ad34c2ebafd83f49cb8e73fed3d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61c6c3e2790298ca9bef424e17010ae5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mcu_8h.html#a61c6c3e2790298ca9bef424e17010ae5">PC_LOC</a>&#160;&#160;&#160;0x01001FF8</td></tr>
+<tr class="separator:a61c6c3e2790298ca9bef424e17010ae5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a215db83d20cdaad8c4da6d89d47a7aeb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mcu_8h.html#a215db83d20cdaad8c4da6d89d47a7aeb">INT_COUNT</a>&#160;&#160;&#160;0x01001FF4</td></tr>
+<tr class="separator:a215db83d20cdaad8c4da6d89d47a7aeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac43a5ae3a904329c2b601fc3b62177a2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mcu_8h.html#ac43a5ae3a904329c2b601fc3b62177a2">UART_DATA_RDY</a>&#160;&#160;&#160;0x1f800005</td></tr>
+<tr class="separator:ac43a5ae3a904329c2b601fc3b62177a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3534549170c0e5fd264751ffc88ac8a4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mcu_8h.html#a3534549170c0e5fd264751ffc88ac8a4">UART_OSC_REG</a>&#160;&#160;&#160;0x1f800702</td></tr>
+<tr class="separator:a3534549170c0e5fd264751ffc88ac8a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6a98a78f9ac0c75c18c7d4e2c62fdcb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mcu_8h.html#ae6a98a78f9ac0c75c18c7d4e2c62fdcb">SYS_CTL2_REG</a>&#160;&#160;&#160;0x1f800702</td></tr>
+<tr class="separator:ae6a98a78f9ac0c75c18c7d4e2c62fdcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43d7770fdd59d1c008b789d8e9ae882b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mcu_8h.html#a43d7770fdd59d1c008b789d8e9ae882b">SYS_IOCTL_REG</a>&#160;&#160;&#160;0x1f800704</td></tr>
+<tr class="separator:a43d7770fdd59d1c008b789d8e9ae882b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3e6052bd0e6d9801c5380f2d8d94a17"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mcu_8h.html#ae3e6052bd0e6d9801c5380f2d8d94a17">SYS_IRQ_REG</a>&#160;&#160;&#160;0x1f800707</td></tr>
+<tr class="separator:ae3e6052bd0e6d9801c5380f2d8d94a17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab34acec79daf4fcc12a662cde9e75df7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mcu_8h.html#ab34acec79daf4fcc12a662cde9e75df7">SYS_CTL0_REG</a>&#160;&#160;&#160;0x1f800700</td></tr>
+<tr class="separator:ab34acec79daf4fcc12a662cde9e75df7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8de95a7e93d24e973c34d5a2acb174d6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mcu_8h.html#a8de95a7e93d24e973c34d5a2acb174d6">INT_CTL0_REG</a>&#160;&#160;&#160;0x1f800500</td></tr>
+<tr class="separator:a8de95a7e93d24e973c34d5a2acb174d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a854bd396a90c4c6b4415c106cb64281f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mcu_8h.html#a854bd396a90c4c6b4415c106cb64281f">INT_CTL1_REG</a>&#160;&#160;&#160;0x1f800501</td></tr>
+<tr class="separator:a854bd396a90c4c6b4415c106cb64281f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f7890a929baefa8c8c2cf341d75844e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mcu_8h.html#a0f7890a929baefa8c8c2cf341d75844e">INT_CTL2_REG</a>&#160;&#160;&#160;0x1f800502</td></tr>
+<tr class="separator:a0f7890a929baefa8c8c2cf341d75844e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3db4a185cd2de3411b6de2dfee71a009"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mcu_8h.html#a3db4a185cd2de3411b6de2dfee71a009">INT_CLR_REG</a>&#160;&#160;&#160;0x1f800503</td></tr>
+<tr class="separator:a3db4a185cd2de3411b6de2dfee71a009"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fcbf547ee8e3eed7d1160ac2bdc1c68"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mcu_8h.html#a1fcbf547ee8e3eed7d1160ac2bdc1c68">SD_CTL_REG</a>&#160;&#160;&#160;0x1f800c00</td></tr>
+<tr class="separator:a1fcbf547ee8e3eed7d1160ac2bdc1c68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae19b0669eb98ef21efe12f3766e8cf90"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mcu_8h.html#ae19b0669eb98ef21efe12f3766e8cf90">uart_bport</a>&#160;&#160;&#160;0x1f800001</td></tr>
+<tr class="separator:ae19b0669eb98ef21efe12f3766e8cf90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1af2505134cc4b3ec99e2beb21f893b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mcu_8h.html#ad1af2505134cc4b3ec99e2beb21f893b">uart_wport</a>&#160;&#160;&#160;0x1f800002</td></tr>
+<tr class="separator:ad1af2505134cc4b3ec99e2beb21f893b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a030bc1aa90aa35dd2218b7f56223b7b8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mcu_8h.html#a030bc1aa90aa35dd2218b7f56223b7b8">uart_rport</a>&#160;&#160;&#160;0x1f800000</td></tr>
+<tr class="separator:a030bc1aa90aa35dd2218b7f56223b7b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a130b81c2c8082a6c9333eeb8c94a9f88"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mcu_8h.html#a130b81c2c8082a6c9333eeb8c94a9f88">uart_rdy_port</a>&#160;&#160;&#160;0x1f800005</td></tr>
+<tr class="separator:a130b81c2c8082a6c9333eeb8c94a9f88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf95a6cedaa1dbd7e61c2f6fce4146ef"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mcu_8h.html#aaf95a6cedaa1dbd7e61c2f6fce4146ef">uart_aport</a>&#160;&#160;&#160;0x1f800003</td></tr>
+<tr class="separator:aaf95a6cedaa1dbd7e61c2f6fce4146ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa11d9f0dc2ca72170c475728603d97c3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mcu_8h.html#aa11d9f0dc2ca72170c475728603d97c3">WRITE_BUSY</a>&#160;&#160;&#160;0x0001</td></tr>
+<tr class="separator:aa11d9f0dc2ca72170c475728603d97c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d8c61bbe7be66130fa7e5de0da67327"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mcu_8h.html#a6d8c61bbe7be66130fa7e5de0da67327">READ_RDY</a>&#160;&#160;&#160;0x0001</td></tr>
+<tr class="separator:a6d8c61bbe7be66130fa7e5de0da67327"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60c1e732a6a5de691742d414db33f1b7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mcu_8h.html#a60c1e732a6a5de691742d414db33f1b7">MemoryRead8</a>(A)&#160;&#160;&#160;(*(volatile char*)(A))</td></tr>
+<tr class="separator:a60c1e732a6a5de691742d414db33f1b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25f4f9592717c322cdc523ac8a12e776"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mcu_8h.html#a25f4f9592717c322cdc523ac8a12e776">MemoryRead16</a>(A)&#160;&#160;&#160;(*(volatile unsigned short*)(A))</td></tr>
+<tr class="separator:a25f4f9592717c322cdc523ac8a12e776"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb6df44d49409584016eff1f123f7bce"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mcu_8h.html#abb6df44d49409584016eff1f123f7bce">MemoryRead</a>(A)&#160;&#160;&#160;(*(volatile unsigned int*)(A))</td></tr>
+<tr class="separator:abb6df44d49409584016eff1f123f7bce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ed62fbc21968ac90bbe2f1d89cce436"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mcu_8h.html#a9ed62fbc21968ac90bbe2f1d89cce436">MemoryRead32</a>(A)&#160;&#160;&#160;(*(volatile unsigned long*)(A))</td></tr>
+<tr class="separator:a9ed62fbc21968ac90bbe2f1d89cce436"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cd932ebfc120d62c53d26c38c9181f2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mcu_8h.html#a7cd932ebfc120d62c53d26c38c9181f2">MemoryWrite8</a>(A,  V)&#160;&#160;&#160;*(volatile char*)(A)=(V)</td></tr>
+<tr class="separator:a7cd932ebfc120d62c53d26c38c9181f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af24f046fb82da490c9a2a94e2d99b31d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mcu_8h.html#af24f046fb82da490c9a2a94e2d99b31d">MemoryWrite16</a>(A,  V)&#160;&#160;&#160;*(volatile unsigned short*)(A)=(V)</td></tr>
+<tr class="separator:af24f046fb82da490c9a2a94e2d99b31d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adce5415d2f1f3a3461247de814fdd89c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mcu_8h.html#adce5415d2f1f3a3461247de814fdd89c">MemoryWrite</a>(A,  V)&#160;&#160;&#160;*(volatile unsigned int*)(A)=(V)</td></tr>
+<tr class="separator:adce5415d2f1f3a3461247de814fdd89c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd4e390eacc4ad056a0aaa603f31b2ef"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mcu_8h.html#acd4e390eacc4ad056a0aaa603f31b2ef">MemoryWrite32</a>(A,  V)&#160;&#160;&#160;*(volatile unsigned long*)(A)=(V)</td></tr>
+<tr class="separator:acd4e390eacc4ad056a0aaa603f31b2ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a738f6eaa1d798fca28db3f14567f6340"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mcu_8h.html#a738f6eaa1d798fca28db3f14567f6340">MemoryAnd8</a>(A,  V)&#160;&#160;&#160;*(volatile char*)(A)&amp;=(V)</td></tr>
+<tr class="separator:a738f6eaa1d798fca28db3f14567f6340"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06a8432d83452826922863ed8d4aa3bd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mcu_8h.html#a06a8432d83452826922863ed8d4aa3bd">MemoryAnd16</a>(A,  V)&#160;&#160;&#160;*(volatile unsigned short*)(A)&amp;=(V)</td></tr>
+<tr class="separator:a06a8432d83452826922863ed8d4aa3bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9859c5b19dccea6f056dcffbab34f2b8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mcu_8h.html#a9859c5b19dccea6f056dcffbab34f2b8">MemoryAnd</a>(A,  V)&#160;&#160;&#160;*(volatile unsigned int*)(A)&amp;=(V)</td></tr>
+<tr class="separator:a9859c5b19dccea6f056dcffbab34f2b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc4ab9a61ecf8293dd8d44fe3f4edacf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mcu_8h.html#afc4ab9a61ecf8293dd8d44fe3f4edacf">MemoryAnd32</a>(A,  V)&#160;&#160;&#160;*(volatile unsigned long*)(A)&amp;=(V)</td></tr>
+<tr class="separator:afc4ab9a61ecf8293dd8d44fe3f4edacf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a697cc655424c2ba522b1bf15d8079479"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mcu_8h.html#a697cc655424c2ba522b1bf15d8079479">MemoryOr8</a>(A,  V)&#160;&#160;&#160;*(volatile char*)(A)|=(V)</td></tr>
+<tr class="separator:a697cc655424c2ba522b1bf15d8079479"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fb2340c83d9e384297ecd91e7484175"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mcu_8h.html#a9fb2340c83d9e384297ecd91e7484175">MemoryOr16</a>(A,  V)&#160;&#160;&#160;*(volatile unsigned short*)(A)|=(V)</td></tr>
+<tr class="separator:a9fb2340c83d9e384297ecd91e7484175"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a847d3f35b85f2e3a91fc063d11bb758a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mcu_8h.html#a847d3f35b85f2e3a91fc063d11bb758a">MemoryOr</a>(A,  V)&#160;&#160;&#160;*(volatile unsigned int*)(A)|=(V)</td></tr>
+<tr class="separator:a847d3f35b85f2e3a91fc063d11bb758a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6410dc39af2dba6b08c65753ea57da0c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mcu_8h.html#a6410dc39af2dba6b08c65753ea57da0c">MemoryOr32</a>(A,  V)&#160;&#160;&#160;*(volatile unsigned long*)(A)|=(V)</td></tr>
+<tr class="separator:a6410dc39af2dba6b08c65753ea57da0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0ff5e54b44ad7de35dc461f715b0d0c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mcu_8h.html#ac0ff5e54b44ad7de35dc461f715b0d0c">MemoryBitAt</a>(A,  V)&#160;&#160;&#160;(((*(volatile unsigned int*)(A))&amp;(1&lt;&lt;V))&gt;&gt;V)</td></tr>
+<tr class="separator:ac0ff5e54b44ad7de35dc461f715b0d0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b5c7263f32d6555951bedb9222f9c25"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mcu_8h.html#a5b5c7263f32d6555951bedb9222f9c25">RT_SYSINT_Flag</a>()&#160;&#160;&#160;<a class="el" href="mcu_8h.html#abb6df44d49409584016eff1f123f7bce">MemoryRead</a>(<a class="el" href="_module_8c.html#ae3e6052bd0e6d9801c5380f2d8d94a17">SYS_IRQ_REG</a>)</td></tr>
+<tr class="separator:a5b5c7263f32d6555951bedb9222f9c25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:aab97abb79e53943c297a91f57eefe3a6"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mcu_8h.html#aab97abb79e53943c297a91f57eefe3a6">getMAC</a> ()</td></tr>
+<tr class="separator:aab97abb79e53943c297a91f57eefe3a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38ddb5fe24b3e7515e18f2c40e256f3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mcu_8h.html#a38ddb5fe24b3e7515e18f2c40e256f3f">setMAC</a> (char id)</td></tr>
+<tr class="separator:a38ddb5fe24b3e7515e18f2c40e256f3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:a0e8f322e0f8af43a44a582345be5a461"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mcu_8h.html#a0e8f322e0f8af43a44a582345be5a461">__mac_id</a></td></tr>
+<tr class="separator:a0e8f322e0f8af43a44a582345be5a461"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">宏定义说明</h2>
+<a id="ab9fe47395310b34fa1ceb112c9ca10e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9fe47395310b34fa1ceb112c9ca10e2">&#9670;&nbsp;</a></span>BROADCAST_ID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BROADCAST_ID&#160;&#160;&#160;0x20</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="mcu_8h_source.html">mcu.h</a> 第 <a class="el" href="mcu_8h_source.html#l00037">37</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a8ab8d9e7f143cb0c17c688702f755ffa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ab8d9e7f143cb0c17c688702f755ffa">&#9670;&nbsp;</a></span>DATA_END</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DATA_END&#160;&#160;&#160;0x3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="mcu_8h_source.html">mcu.h</a> 第 <a class="el" href="mcu_8h_source.html#l00034">34</a> 行定义.</p>
+
+</div>
+</div>
+<a id="af55149bc1f05cf18af067a302e31e3f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af55149bc1f05cf18af067a302e31e3f9">&#9670;&nbsp;</a></span>DATA_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DATA_SIZE&#160;&#160;&#160;256</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="mcu_8h_source.html">mcu.h</a> 第 <a class="el" href="mcu_8h_source.html#l00038">38</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a5562e3e4189eff9e71305f172f2b515a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5562e3e4189eff9e71305f172f2b515a">&#9670;&nbsp;</a></span>DATA_START</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DATA_START&#160;&#160;&#160;0x2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="mcu_8h_source.html">mcu.h</a> 第 <a class="el" href="mcu_8h_source.html#l00033">33</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a03551f0f8a57ac60892dc98b90fc3427"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03551f0f8a57ac60892dc98b90fc3427">&#9670;&nbsp;</a></span>DBG_ACK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DBG_ACK&#160;&#160;&#160;0x5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="mcu_8h_source.html">mcu.h</a> 第 <a class="el" href="mcu_8h_source.html#l00031">31</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a3db4a185cd2de3411b6de2dfee71a009"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3db4a185cd2de3411b6de2dfee71a009">&#9670;&nbsp;</a></span>INT_CLR_REG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define INT_CLR_REG&#160;&#160;&#160;0x1f800503</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="mcu_8h_source.html">mcu.h</a> 第 <a class="el" href="mcu_8h_source.html#l00057">57</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a215db83d20cdaad8c4da6d89d47a7aeb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a215db83d20cdaad8c4da6d89d47a7aeb">&#9670;&nbsp;</a></span>INT_COUNT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define INT_COUNT&#160;&#160;&#160;0x01001FF4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="mcu_8h_source.html">mcu.h</a> 第 <a class="el" href="mcu_8h_source.html#l00044">44</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a8de95a7e93d24e973c34d5a2acb174d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8de95a7e93d24e973c34d5a2acb174d6">&#9670;&nbsp;</a></span>INT_CTL0_REG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define INT_CTL0_REG&#160;&#160;&#160;0x1f800500</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="mcu_8h_source.html">mcu.h</a> 第 <a class="el" href="mcu_8h_source.html#l00054">54</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a854bd396a90c4c6b4415c106cb64281f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a854bd396a90c4c6b4415c106cb64281f">&#9670;&nbsp;</a></span>INT_CTL1_REG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define INT_CTL1_REG&#160;&#160;&#160;0x1f800501</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="mcu_8h_source.html">mcu.h</a> 第 <a class="el" href="mcu_8h_source.html#l00055">55</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a0f7890a929baefa8c8c2cf341d75844e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f7890a929baefa8c8c2cf341d75844e">&#9670;&nbsp;</a></span>INT_CTL2_REG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define INT_CTL2_REG&#160;&#160;&#160;0x1f800502</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="mcu_8h_source.html">mcu.h</a> 第 <a class="el" href="mcu_8h_source.html#l00056">56</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aca69c626499ce2e479703cc526dba84d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca69c626499ce2e479703cc526dba84d">&#9670;&nbsp;</a></span>MAC_ID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAC_ID&#160;&#160;&#160;0x1001f3f0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="mcu_8h_source.html">mcu.h</a> 第 <a class="el" href="mcu_8h_source.html#l00029">29</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a150a81da38cd990da60c0363014b246b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a150a81da38cd990da60c0363014b246b">&#9670;&nbsp;</a></span>MASTER_ID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MASTER_ID&#160;&#160;&#160;0x20</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="mcu_8h_source.html">mcu.h</a> 第 <a class="el" href="mcu_8h_source.html#l00035">35</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a9859c5b19dccea6f056dcffbab34f2b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9859c5b19dccea6f056dcffbab34f2b8">&#9670;&nbsp;</a></span>MemoryAnd</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MemoryAnd</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">A, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">V&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;*(volatile unsigned int*)(A)&amp;=(V)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="mcu_8h_source.html">mcu.h</a> 第 <a class="el" href="mcu_8h_source.html#l00086">86</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a06a8432d83452826922863ed8d4aa3bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06a8432d83452826922863ed8d4aa3bd">&#9670;&nbsp;</a></span>MemoryAnd16</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MemoryAnd16</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">A, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">V&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;*(volatile unsigned short*)(A)&amp;=(V)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="mcu_8h_source.html">mcu.h</a> 第 <a class="el" href="mcu_8h_source.html#l00085">85</a> 行定义.</p>
+
+</div>
+</div>
+<a id="afc4ab9a61ecf8293dd8d44fe3f4edacf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc4ab9a61ecf8293dd8d44fe3f4edacf">&#9670;&nbsp;</a></span>MemoryAnd32</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MemoryAnd32</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">A, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">V&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;*(volatile unsigned long*)(A)&amp;=(V)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="mcu_8h_source.html">mcu.h</a> 第 <a class="el" href="mcu_8h_source.html#l00087">87</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a738f6eaa1d798fca28db3f14567f6340"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a738f6eaa1d798fca28db3f14567f6340">&#9670;&nbsp;</a></span>MemoryAnd8</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MemoryAnd8</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">A, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">V&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;*(volatile char*)(A)&amp;=(V)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="mcu_8h_source.html">mcu.h</a> 第 <a class="el" href="mcu_8h_source.html#l00084">84</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ac0ff5e54b44ad7de35dc461f715b0d0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0ff5e54b44ad7de35dc461f715b0d0c">&#9670;&nbsp;</a></span>MemoryBitAt</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MemoryBitAt</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">A, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">V&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;(((*(volatile unsigned int*)(A))&amp;(1&lt;&lt;V))&gt;&gt;V)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="mcu_8h_source.html">mcu.h</a> 第 <a class="el" href="mcu_8h_source.html#l00094">94</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a847d3f35b85f2e3a91fc063d11bb758a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a847d3f35b85f2e3a91fc063d11bb758a">&#9670;&nbsp;</a></span>MemoryOr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MemoryOr</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">A, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">V&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;*(volatile unsigned int*)(A)|=(V)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="mcu_8h_source.html">mcu.h</a> 第 <a class="el" href="mcu_8h_source.html#l00091">91</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a9fb2340c83d9e384297ecd91e7484175"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fb2340c83d9e384297ecd91e7484175">&#9670;&nbsp;</a></span>MemoryOr16</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MemoryOr16</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">A, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">V&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;*(volatile unsigned short*)(A)|=(V)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="mcu_8h_source.html">mcu.h</a> 第 <a class="el" href="mcu_8h_source.html#l00090">90</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a6410dc39af2dba6b08c65753ea57da0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6410dc39af2dba6b08c65753ea57da0c">&#9670;&nbsp;</a></span>MemoryOr32</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MemoryOr32</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">A, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">V&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;*(volatile unsigned long*)(A)|=(V)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="mcu_8h_source.html">mcu.h</a> 第 <a class="el" href="mcu_8h_source.html#l00092">92</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a697cc655424c2ba522b1bf15d8079479"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a697cc655424c2ba522b1bf15d8079479">&#9670;&nbsp;</a></span>MemoryOr8</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MemoryOr8</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">A, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">V&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;*(volatile char*)(A)|=(V)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="mcu_8h_source.html">mcu.h</a> 第 <a class="el" href="mcu_8h_source.html#l00089">89</a> 行定义.</p>
+
+</div>
+</div>
+<a id="abb6df44d49409584016eff1f123f7bce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb6df44d49409584016eff1f123f7bce">&#9670;&nbsp;</a></span>MemoryRead</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MemoryRead</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">A</td><td>)</td>
+          <td>&#160;&#160;&#160;(*(volatile unsigned int*)(A))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="mcu_8h_source.html">mcu.h</a> 第 <a class="el" href="mcu_8h_source.html#l00077">77</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a25f4f9592717c322cdc523ac8a12e776"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25f4f9592717c322cdc523ac8a12e776">&#9670;&nbsp;</a></span>MemoryRead16</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MemoryRead16</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">A</td><td>)</td>
+          <td>&#160;&#160;&#160;(*(volatile unsigned short*)(A))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="mcu_8h_source.html">mcu.h</a> 第 <a class="el" href="mcu_8h_source.html#l00076">76</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a9ed62fbc21968ac90bbe2f1d89cce436"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ed62fbc21968ac90bbe2f1d89cce436">&#9670;&nbsp;</a></span>MemoryRead32</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MemoryRead32</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">A</td><td>)</td>
+          <td>&#160;&#160;&#160;(*(volatile unsigned long*)(A))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="mcu_8h_source.html">mcu.h</a> 第 <a class="el" href="mcu_8h_source.html#l00078">78</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a60c1e732a6a5de691742d414db33f1b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60c1e732a6a5de691742d414db33f1b7">&#9670;&nbsp;</a></span>MemoryRead8</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MemoryRead8</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">A</td><td>)</td>
+          <td>&#160;&#160;&#160;(*(volatile char*)(A))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="mcu_8h_source.html">mcu.h</a> 第 <a class="el" href="mcu_8h_source.html#l00075">75</a> 行定义.</p>
+
+</div>
+</div>
+<a id="adce5415d2f1f3a3461247de814fdd89c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adce5415d2f1f3a3461247de814fdd89c">&#9670;&nbsp;</a></span>MemoryWrite</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MemoryWrite</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">A, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">V&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;*(volatile unsigned int*)(A)=(V)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="mcu_8h_source.html">mcu.h</a> 第 <a class="el" href="mcu_8h_source.html#l00081">81</a> 行定义.</p>
+
+</div>
+</div>
+<a id="af24f046fb82da490c9a2a94e2d99b31d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af24f046fb82da490c9a2a94e2d99b31d">&#9670;&nbsp;</a></span>MemoryWrite16</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MemoryWrite16</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">A, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">V&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;*(volatile unsigned short*)(A)=(V)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="mcu_8h_source.html">mcu.h</a> 第 <a class="el" href="mcu_8h_source.html#l00080">80</a> 行定义.</p>
+
+</div>
+</div>
+<a id="acd4e390eacc4ad056a0aaa603f31b2ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd4e390eacc4ad056a0aaa603f31b2ef">&#9670;&nbsp;</a></span>MemoryWrite32</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MemoryWrite32</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">A, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">V&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;*(volatile unsigned long*)(A)=(V)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="mcu_8h_source.html">mcu.h</a> 第 <a class="el" href="mcu_8h_source.html#l00082">82</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a7cd932ebfc120d62c53d26c38c9181f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cd932ebfc120d62c53d26c38c9181f2">&#9670;&nbsp;</a></span>MemoryWrite8</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MemoryWrite8</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">A, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">V&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;*(volatile char*)(A)=(V)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="mcu_8h_source.html">mcu.h</a> 第 <a class="el" href="mcu_8h_source.html#l00079">79</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a0b9040cb056dcc57d776d2d7e4724485"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b9040cb056dcc57d776d2d7e4724485">&#9670;&nbsp;</a></span>PAC_HEAD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PAC_HEAD&#160;&#160;&#160;0x1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="mcu_8h_source.html">mcu.h</a> 第 <a class="el" href="mcu_8h_source.html#l00027">27</a> 行定义.</p>
+
+</div>
+</div>
+<a id="af7dc6e028aad2bbadddb1fceffc24687"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7dc6e028aad2bbadddb1fceffc24687">&#9670;&nbsp;</a></span>PAC_TAIL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PAC_TAIL&#160;&#160;&#160;0x17</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="mcu_8h_source.html">mcu.h</a> 第 <a class="el" href="mcu_8h_source.html#l00028">28</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a61c6c3e2790298ca9bef424e17010ae5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61c6c3e2790298ca9bef424e17010ae5">&#9670;&nbsp;</a></span>PC_LOC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PC_LOC&#160;&#160;&#160;0x01001FF8</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="mcu_8h_source.html">mcu.h</a> 第 <a class="el" href="mcu_8h_source.html#l00043">43</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a6d8c61bbe7be66130fa7e5de0da67327"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d8c61bbe7be66130fa7e5de0da67327">&#9670;&nbsp;</a></span>READ_RDY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define READ_RDY&#160;&#160;&#160;0x0001</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="mcu_8h_source.html">mcu.h</a> 第 <a class="el" href="mcu_8h_source.html#l00071">71</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a5b5c7263f32d6555951bedb9222f9c25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b5c7263f32d6555951bedb9222f9c25">&#9670;&nbsp;</a></span>RT_SYSINT_Flag</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RT_SYSINT_Flag</td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="mcu_8h.html#abb6df44d49409584016eff1f123f7bce">MemoryRead</a>(<a class="el" href="_module_8c.html#ae3e6052bd0e6d9801c5380f2d8d94a17">SYS_IRQ_REG</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="mcu_8h_source.html">mcu.h</a> 第 <a class="el" href="mcu_8h_source.html#l00100">100</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a1fcbf547ee8e3eed7d1160ac2bdc1c68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fcbf547ee8e3eed7d1160ac2bdc1c68">&#9670;&nbsp;</a></span>SD_CTL_REG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SD_CTL_REG&#160;&#160;&#160;0x1f800c00</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="mcu_8h_source.html">mcu.h</a> 第 <a class="el" href="mcu_8h_source.html#l00060">60</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aaf3ba4144515d9560664f4964804fa05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf3ba4144515d9560664f4964804fa05">&#9670;&nbsp;</a></span>STUDIO_ID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STUDIO_ID&#160;&#160;&#160;0x20</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="mcu_8h_source.html">mcu.h</a> 第 <a class="el" href="mcu_8h_source.html#l00036">36</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab2044f75719bae5fab1b33e5f1b3e1ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2044f75719bae5fab1b33e5f1b3e1ea">&#9670;&nbsp;</a></span>SYNC_LEN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SYNC_LEN&#160;&#160;&#160;8</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="mcu_8h_source.html">mcu.h</a> 第 <a class="el" href="mcu_8h_source.html#l00026">26</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab34acec79daf4fcc12a662cde9e75df7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab34acec79daf4fcc12a662cde9e75df7">&#9670;&nbsp;</a></span>SYS_CTL0_REG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SYS_CTL0_REG&#160;&#160;&#160;0x1f800700</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="mcu_8h_source.html">mcu.h</a> 第 <a class="el" href="mcu_8h_source.html#l00052">52</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ae6a98a78f9ac0c75c18c7d4e2c62fdcb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6a98a78f9ac0c75c18c7d4e2c62fdcb">&#9670;&nbsp;</a></span>SYS_CTL2_REG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SYS_CTL2_REG&#160;&#160;&#160;0x1f800702</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="mcu_8h_source.html">mcu.h</a> 第 <a class="el" href="mcu_8h_source.html#l00049">49</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a43d7770fdd59d1c008b789d8e9ae882b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43d7770fdd59d1c008b789d8e9ae882b">&#9670;&nbsp;</a></span>SYS_IOCTL_REG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SYS_IOCTL_REG&#160;&#160;&#160;0x1f800704</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="mcu_8h_source.html">mcu.h</a> 第 <a class="el" href="mcu_8h_source.html#l00050">50</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ae3e6052bd0e6d9801c5380f2d8d94a17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3e6052bd0e6d9801c5380f2d8d94a17">&#9670;&nbsp;</a></span>SYS_IRQ_REG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SYS_IRQ_REG&#160;&#160;&#160;0x1f800707</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="mcu_8h_source.html">mcu.h</a> 第 <a class="el" href="mcu_8h_source.html#l00051">51</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aaf95a6cedaa1dbd7e61c2f6fce4146ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf95a6cedaa1dbd7e61c2f6fce4146ef">&#9670;&nbsp;</a></span>uart_aport</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define uart_aport&#160;&#160;&#160;0x1f800003</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="mcu_8h_source.html">mcu.h</a> 第 <a class="el" href="mcu_8h_source.html#l00069">69</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ae19b0669eb98ef21efe12f3766e8cf90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae19b0669eb98ef21efe12f3766e8cf90">&#9670;&nbsp;</a></span>uart_bport</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define uart_bport&#160;&#160;&#160;0x1f800001</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="mcu_8h_source.html">mcu.h</a> 第 <a class="el" href="mcu_8h_source.html#l00065">65</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ac43a5ae3a904329c2b601fc3b62177a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac43a5ae3a904329c2b601fc3b62177a2">&#9670;&nbsp;</a></span>UART_DATA_RDY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UART_DATA_RDY&#160;&#160;&#160;0x1f800005</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="mcu_8h_source.html">mcu.h</a> 第 <a class="el" href="mcu_8h_source.html#l00046">46</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a3534549170c0e5fd264751ffc88ac8a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3534549170c0e5fd264751ffc88ac8a4">&#9670;&nbsp;</a></span>UART_OSC_REG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UART_OSC_REG&#160;&#160;&#160;0x1f800702</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="mcu_8h_source.html">mcu.h</a> 第 <a class="el" href="mcu_8h_source.html#l00047">47</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a130b81c2c8082a6c9333eeb8c94a9f88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a130b81c2c8082a6c9333eeb8c94a9f88">&#9670;&nbsp;</a></span>uart_rdy_port</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define uart_rdy_port&#160;&#160;&#160;0x1f800005</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="mcu_8h_source.html">mcu.h</a> 第 <a class="el" href="mcu_8h_source.html#l00068">68</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a030bc1aa90aa35dd2218b7f56223b7b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a030bc1aa90aa35dd2218b7f56223b7b8">&#9670;&nbsp;</a></span>uart_rport</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define uart_rport&#160;&#160;&#160;0x1f800000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="mcu_8h_source.html">mcu.h</a> 第 <a class="el" href="mcu_8h_source.html#l00067">67</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ad1af2505134cc4b3ec99e2beb21f893b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1af2505134cc4b3ec99e2beb21f893b">&#9670;&nbsp;</a></span>uart_wport</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define uart_wport&#160;&#160;&#160;0x1f800002</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="mcu_8h_source.html">mcu.h</a> 第 <a class="el" href="mcu_8h_source.html#l00066">66</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a4358ad34c2ebafd83f49cb8e73fed3d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4358ad34c2ebafd83f49cb8e73fed3d5">&#9670;&nbsp;</a></span>USER_INT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define USER_INT&#160;&#160;&#160;0x01001FFC</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="mcu_8h_source.html">mcu.h</a> 第 <a class="el" href="mcu_8h_source.html#l00042">42</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a0a77526dc8ea2e52f0abfb4c373af822"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a77526dc8ea2e52f0abfb4c373af822">&#9670;&nbsp;</a></span>WRITE_ACK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WRITE_ACK&#160;&#160;&#160;0x6</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="mcu_8h_source.html">mcu.h</a> 第 <a class="el" href="mcu_8h_source.html#l00032">32</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aa11d9f0dc2ca72170c475728603d97c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa11d9f0dc2ca72170c475728603d97c3">&#9670;&nbsp;</a></span>WRITE_BUSY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WRITE_BUSY&#160;&#160;&#160;0x0001</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="mcu_8h_source.html">mcu.h</a> 第 <a class="el" href="mcu_8h_source.html#l00070">70</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a id="aab97abb79e53943c297a91f57eefe3a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab97abb79e53943c297a91f57eefe3a6">&#9670;&nbsp;</a></span>getMAC()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char getMAC </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a38ddb5fe24b3e7515e18f2c40e256f3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38ddb5fe24b3e7515e18f2c40e256f3f">&#9670;&nbsp;</a></span>setMAC()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setMAC </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">变量说明</h2>
+<a id="a0e8f322e0f8af43a44a582345be5a461"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e8f322e0f8af43a44a582345be5a461">&#9670;&nbsp;</a></span>__mac_id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char __mac_id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="mcu_8h.html">mcu.h</a></li>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>
